@@ -24,3 +24,11 @@ vim web-server.yml
       - mariadb-server
       - mariadb
       - ntpd
+      
+    - name: copy file
+      shell: echo "<?php phpinfo (); ?>" > /var/www/html/info.php
+    
+    - name: restart httpd
+      service:
+        name: httpd
+        state: restarted   

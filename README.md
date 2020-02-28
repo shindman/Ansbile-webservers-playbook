@@ -1,10 +1,11 @@
 # Ansbile-webservers-playbook
-This playbook will help us to installing web server related some packages on linux systems(Centos 7).
+This playbook will help us to installing web server related some packages on linux systems(Centos 7). To see the playbook clear, use raw tab.
 
 vim web-server.yml
 
 ---
  - hosts: [hosts name from /etc/ansible/hosts file]
+ 
    user: [Remote user name]
 
    tasks:
